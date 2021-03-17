@@ -10,14 +10,14 @@
 
 	<div class="container">
 		
-		<h3>Carla Assis</h3>
-		<h4>carla.chagas@al.infnet.edu.br</h4>
-		<h4><a href= https://github.com/carlaassis/appsdijavaweb> </a> GIT</h4>
+		<h2><p class="text-center"><strong>.::Carla Assis::.</strong></h2></p>
+		<h4><p class="text-center"><mark>carla.chagas@al.infnet.edu.br</mark></h4></p>
+		<h4><p class="text-center"><a href= https://github.com/carlaassis/appsdijavaweb> GIT</a> </h4></p>
 		
 			
 			
 		<form action="/usuario" method="get">
-		<button type="submit">Novo usuário</button>
+		<button type="submit" class="btn btn-primary btn-block">Add Novo Usuário</button>
 				</form>
 				
 				</div>

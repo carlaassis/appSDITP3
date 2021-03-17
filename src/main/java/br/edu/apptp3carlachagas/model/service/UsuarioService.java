@@ -1,9 +1,10 @@
 package br.edu.apptp3carlachagas.model.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import antlr.collections.List;
 import br.edu.apptp3carlachagas.model.negocio.Usuario;
 import br.edu.apptp3carlachagas.model.repository.IUsuarioRepository;
 
@@ -19,6 +20,7 @@ public class UsuarioService {
 
 	public List<Usuario> obterLista(){
 		return (List<Usuario>)usuarioRepository.findAll();
+		
 }
 	
 	public void excluir(Integer id) {

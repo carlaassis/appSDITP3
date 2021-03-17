@@ -16,25 +16,25 @@
 
 		<form action="/usuario/incluir" method="post">
 			<div class="form-group">
-				<label>Informe seu nome</label> 
+				<label><strong>Informe seu nome:</strong></label> 
 				<input type="text" class="form-control" name="nome">
 			</div>
 
 			<div class="form-group">
-				<label>Informe seu e-mail</label> 
+				<label><strong>Informe seu e-mail:</strong></label> 
 				<input type="email" class="form-control" name="email">
 			</div>
 
 			<div class="form-group">
-				<label>Informe a sua senha</label> 
+				<label><strong>Informe sua senha:</strong></label> 
 				<input type="password" class="form-control" name="senha">
 			</div>
-			<button type="submit">Gravar</button>
+			<button type="submit" class="btn btn-primary"><strong>Gravar Novo Usuário</button>
 
 
 		</form>
 		<c:if test="${not empty usuarios}">
-		  <h2>Listagem de Usuários</h2>            
+		  <h4><strong><p class="text-center bg-info">.::LISTA DE USUÁRIOS CADASTRADOS::.</p></strong></h4>            
 		  <table class="table">
 		    <thead>
 		      <tr>
@@ -48,7 +48,7 @@
 		      <tr>
 		        <td>${u.nome}</td>
 		        <td>${u.email}</td>
-		        <th> <a href="/usuario/${u.id}/excluir">excluir</a></th>
+		        <th> <button type="button" class="btn btn-danger text-center"> <a href="/usuario/${u.id}/excluir">Excluir</a></th></button>
 		      </tr>
 		      </c:forEach>
 		    </tbody>
@@ -56,7 +56,7 @@
 		  </c:if>
 		  
 		  <c:if test="${empty usuarios}">
-		  <h2>Nenhum usuário cadastrado!!</h2>
+		  <h4><p class="text-center bg-danger"><strong>.::Nenhum Usuário Cadastrado::.</p></strong></h4>
 		  </c:if>
 		</div>
 		</body>
